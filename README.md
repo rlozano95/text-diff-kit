@@ -81,9 +81,10 @@ usable directly in shell conditionals or CI steps without parsing output.
 
 ## Status
 
-Early skeleton. The diff algorithm and CLI both work end to end, but the
-output is unhunked (every line is shown, not just the ones near a change) and
-there's no test suite yet.
+Early skeleton. The diff algorithm and CLI both work end to end, and
+`diffLines` has a test suite covering empty inputs, identical files, and
+trailing-newline handling (`npm run build && npm test`). The output is still
+unhunked, though — every line is shown, not just the ones near a change.
 
 ## License
 

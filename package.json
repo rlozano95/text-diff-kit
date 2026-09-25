@@ -9,7 +9,8 @@
     "textdiff": "./dist/cli.js"
   },
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "test": "node --test dist/**/*.test.js"
   },
   "engines": {
     "node": ">=18"
